@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Helper",
+  "version": "1.0",
+  "description": "Dodaje przycisk do szybkiego blokowania użytkowników na X/Twitter.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Twitter Helper"
+  }
+}
